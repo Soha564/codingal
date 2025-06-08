@@ -1,0 +1,33 @@
+# diamond pattern
+rows = 5
+
+#  *
+# * *
+#* * *
+# * *
+#  *
+
+# Top half of the diamond
+rows = int(input("Enter number of rows (for the first half):"))
+for i in range(rows):
+    #first inner loop to print the spaces
+    for j in range(rows - i - 1):
+        print(" ", end="")
+
+    # sceond inner loop to print the stars
+    for j in range( 2 * i + 1):
+        print("*", end="")
+
+    print()
+
+#Bottom half of the diamond
+for i in range(rows - 2, -1, -1):
+    # first inner loop to print the spaces
+    for j in range(rows - i -1):
+        print(" ", end="")
+
+    # second inner loop to print the stars
+    for j in range(2 * i + 1):
+        print("*", end="")
+
+    print()
