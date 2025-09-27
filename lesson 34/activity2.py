@@ -6,16 +6,25 @@ pygame.display.set_caption("Pygame Circle Example")
 green = (0, 255, 0)
 circle1 = pygame.circle(50, 60, 100, 80)
 
+# Main loop
 running = True
 while running:
-    screen.fill((255, 255, 255))
-
-    # circle
-    pygame.draw.circle(screen, (0, 0, 255), circle1)
-
-
-    pygame.display.update()
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
-            running = False
+            running - False
+
+# Fill background
+screen.fill(WHITE)
+
+# Draw solid circle (filled)
+pygame.draw.circle(screen, green, (200, 300), 80, 0)
+# (surface, color, center(x,y), radius, width=0 + filled)
+
+# Draw hollow circle (border width 3)
+pygame.draw.circle(screen, green, (500, 300), 100, 3)
+# width-3 + only border with thickness 3
+
+# Update display
+pygame.display.flip()
+
 pygame.quit()
