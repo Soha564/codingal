@@ -14,7 +14,7 @@ while running:
             running - False
 
 # Fill background
-screen.fill(WHITE)
+screen.fill()
 
 # Draw solid circle (filled)
 pygame.draw.circle(screen, green, (200, 300), 80, 0)
