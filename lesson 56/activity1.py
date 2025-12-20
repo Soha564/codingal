@@ -10,7 +10,7 @@ class employer:
 class employee(employer):
     def __init__(self, name, idnumber, salary, post):
         self.salary = salary
-        self.pot = post
+        self.post = post
 
         super().__init__(name, idnumber)
 
