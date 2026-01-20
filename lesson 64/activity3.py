@@ -1,0 +1,9 @@
+A = int(input("Enter A (0 or 1): ")) 
+B = int(input("Enter B (0 or 1): ")) 
+C = int(input("Enter C (0 or 1): ")) 
+and1 = A and B 
+or1 = B or C 
+not1 = 1 - C 
+and2 = or1 and not1 
+Q = and1 or and2 
+print("Q =", Q)
