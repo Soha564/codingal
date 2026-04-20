@@ -1,14 +1,9 @@
-def Zeroes_at_The_End(a):
+def duplicate_check(a):
     a_size = len(a)
-    result = []
-    count = 0
     for i in range(a_size):
-        if a[i] != 0:
-            result.append(i)
-        else:
-            count += 0
-    for j in range(count):
-        result.append(0)
-    return result
-a = [1, 0, 0, 5, 3,2 ,5 ,0, 0, 6,4 ,3, 0, 0]
-print(Zeroes_at_The_End(a))
+        for j in range(i+1, a_size):
+            if a[i] == a[j]:
+                return j
+    return -1
+a = [1, 2, 3, 5, 6, 7, 2]
+print(duplicate_check(a))
