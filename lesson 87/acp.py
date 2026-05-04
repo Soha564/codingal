@@ -8,8 +8,6 @@ def selection_sort(arr):
         arr[i], arr[min_index] = arr[min_index], arr[i]
     return arr
 
-
-
 n = int(input("Enter size of array: "))
 print("Start entering elements of array, each element in a new line:\n")
 arr = []
