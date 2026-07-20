@@ -23,3 +23,4 @@ modified = delete_char(modified, pos_delete)
 
 print("Original string:", original)
 print("Modified string:", modified)
+  
